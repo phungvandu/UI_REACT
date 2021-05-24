@@ -1,0 +1,139 @@
+.wrap-login {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.title-left {
+  background-color: var(--keycolor);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-left img {
+  width: 60%;
+}
+.wrap-form {
+  width: 50%;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.title-form {
+}
+.title-form h3 {
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+.title-form p {
+  margin: 0 0 10px 0;
+}
+.title-form a {
+  color: var(--keycolor);
+}
+.logo {
+  margin: 0 0 30px 0;
+}
+.logo a {
+  display: inline-block;
+  width: 20%;
+}
+.logo a img {
+  width: 100%;
+}
+.form {
+  width: 45%;
+  margin: 0 auto;
+  text-align: left;
+}
+.form label {
+  margin: 0 0 10px 0;
+  display: inline-block;
+  color: var(--keycolor);
+}
+.form input {
+  margin: 0 0 18px 0;
+  width: 100%;
+  height: 35px;
+  border-radius: 100px;
+  border: none;
+  background-color: #e8f0fe;
+  padding: 0 0 0 18px;
+}
+.form input:focus-visible {
+  outline: none;
+}
+.form div {
+  text-align: right;
+}
+.form div:nth-child(even) {
+  text-align: center;
+  margin: 20px 0;
+}
+.form div:nth-child(even) a {
+  text-align: center;
+  margin: 20px 0;
+}
+.forgotpas {
+  font-size: 15px;
+  color: gray;
+}
+
+.forgotpas:hover {
+  color: green;
+}
+.form button {
+  padding: 10px 35px;
+  background-color: var(--keycolor);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  margin: 18px 0;
+  transition: 0.4s;
+}
+.form button:hover {
+  transition: 0.4s;
+  background-color: green;
+}
+.loginwith {
+}
+.social-form {
+  text-align: center !important;
+}
+.social-form a {
+  margin: 0 10px;
+}
+.social-form a i {
+  font-size: 26px;
+}
+.social-form .gg {
+  margin: 0 5px;
+  background-color: white;
+  color: brown;
+  border-radius: 57px;
+}
+.social-form .fb {
+  margin: 0 5px;
+  background-color: white;
+  color: #004ec3;
+  border-radius: 57px;
+}
+.footer-form {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0 0 0;
+}
+.detai-footer {
+  font-size: 16px;
+}
+.contact-footer a {
+  padding: 5px 10px;
+  color: var(--keycolor);
+}
+.contact-footer a:hover {
+  color: black;
+}

@@ -1,0 +1,33 @@
+/* Dành cho điện thoại chiều dọc */
+@media all and (max-width: 480px) {
+  .contact-footer a {
+    display: block;
+  }
+}
+
+/* Dành cho máy tính bảng chiều dọc max-width là từ 0 -> 768 min là từ 2000 -> 768*/
+@media all and (max-width: 768px) {
+  .wrap-login {
+    overflow: hidden;
+  }
+  .footer-form {
+    display: block !important;
+    margin: 25px 0 0 0 !important;
+  }
+  .detai-footer {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .form {
+    width: 65% !important;
+  }
+}
+
+/* Dành cho màn hình desktop */
+@media all and (max-width: 1024px) {
+  .contact-footer {
+  }
+  .contact-footer a {
+    display: block;
+  }
+}
