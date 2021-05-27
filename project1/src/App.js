@@ -1,10 +1,14 @@
-import LOGIN from "./component/login/login";
+import { BrowserRouter as Router } from "react-router-dom";
+import RouterURL from "./component/routercontrol/routercontrol";
 
 function App() {
   return (
-    <div className="App">
-      <LOGIN/>
-    </div>
+    <Router>
+      <div className="App">
+        <RouterURL/>
+      </div>
+    </Router>
+    
   );
 }
 export default App;

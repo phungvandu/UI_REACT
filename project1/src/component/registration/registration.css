@@ -1,0 +1,162 @@
+.MuiFormGroup-row {
+  flex-direction: column !important;
+}
+.MuiFormGroup-row p {
+  color: blue;
+  display: inline;
+}
+.MuiFormControlLabel-root {
+  vertical-align: middle !important;
+  display: initial !important;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: none !important;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.MuiFormControlLabel-root {
+  margin-right: 5px !important;
+}
+.wrap-registration {
+  padding: 5vh 0;
+  background-size: 100% 100%;
+  height: 110vh;
+  background-repeat: no-repeat;
+}
+.wrap-userdetail .phone {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+.wrap-userdetail label {
+  margin: 0 0 5px 0;
+  display: inline-block;
+}
+.wrap-userdetail input {
+  height: 28px;
+  padding: 0 0 0 5px;
+  display: block;
+}
+.wrap-registration form {
+  padding: 1% 2%;
+  position: absolute;
+  width: 35%;
+  margin: 0 auto;
+  background: white;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 20px 1px #00000059;
+  height: 100%;
+}
+.wrap-registration form > a {
+  width: 40%;
+  height: 35px;
+  display: inline-block;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  margin: 10px 0;
+}
+.wrap-registration form img {
+  width: 100%;
+  height: 100%;
+}
+.wrap-userdetail {
+  width: 100%;
+}
+.hoten {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.hoten div {
+  width: 48%;
+}
+.hoten div input {
+  width: 100%;
+}
+.phone select {
+  font-size: 14px;
+  height: 28px;
+}
+.phone option {
+  width: 100%;
+  font-size: 14px;
+  height: 30px;
+  margin: 0 10px 0 0;
+}
+.phone div {
+  display: flex;
+  width: 100%;
+}
+.phone input {
+  width: 100%;
+}
+input[type="email"] {
+  width: 100%;
+}
+#namuser {
+  width: 100%;
+}
+#password {
+  width: 100%;
+}
+#exacpas {
+  width: 100%;
+}
+.wrap-pas {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+.wrap-pas div {
+  width: 48%;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+.wrap-pas span {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+}
+/* border: 1px solid #f62d51*/
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background: #7599ff;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+section {
+  text-align: center;
+}
+
+section a {
+  color: blue;
+}
+.language {
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
+  padding: 0 0 0 45px;
+  font-size: 14px;
+}
+.star {
+  position: absolute;
+  left: 38px;
+  bottom: 21px;
+  background: red;
+  padding: 1px 6px;
+  color: yellow;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './login.css';
 
 export default function login() {
@@ -13,7 +14,7 @@ export default function login() {
                     <p>để truy cập <a href='login'>Offer Pro</a></p>
                 </div>
                 <div className='logo'>
-                    <a href=' '><img src='/images/logo.png' alt='' /></a>
+                    <a href='/dangnhap'><img src='/images/logo.png' alt='' /></a>
                 </div>
                 <form className='form' action=''>
                     <label>Tên đăng nhập / Email</label>
@@ -22,7 +23,7 @@ export default function login() {
                     <input type='text' placeholder='Mật khẩu' />
                     <div><a className='forgotpas' href=' '>Quên mật khẩu ?</a></div>
                     <div>
-                        <a className=' ' href=' '>Đăng ký tài khoản</a><br/>
+                        <Link to='/dangky'>Đăng ký tài khoản</Link><br/>
                         <button type='submit'>Đăng nhập</button><br/>
                         <a className='loginwith' href=' '>Hoặc đăng nhập với</a>
                     </div>
