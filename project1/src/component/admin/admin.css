@@ -1,0 +1,26 @@
+.wrap-admin {
+  width: 100%;
+  display: flex;
+}
+.sidebar-admin {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 20%;
+  background-color: #002334;
+  color: white;
+}
+.sidebar-admin h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.content-admin {
+  width: 100%;
+  background: white;
+  color: black;
+  flex-grow: 1;
+  height: 100vh;
+  margin: 0 0 0 20%;
+  padding: 5%;
+}

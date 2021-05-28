@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import './registration.css';
 
@@ -10,16 +12,50 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 export default function registration() {
 
+    // eslint-disable-next-line no-unused-vars
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [state, setState] = useState({
+        displayname: '',
+        username: '',
+        password: '',
+        email: '',
+        phone: '',
         checkedA: false,
         checkedB: false,
         checkedF: true,
         checkedG: true,
     });
-    
+
+
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+
+        const displayname = document.getElementById('ten');
+        const username = document.getElementById('nameuser');
+        const password = document.getElementById('password');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('sodienthoai');
+        const user = [
+            displayname.value,
+            username.value,
+            password.value,
+            email.value,
+            phone.value
+        ]
+        
+        axios.post(`http://api.oceantech.vn/intern/oauth/signup`, {user})
+        .then(response => {
+            console.log(response);
+            console.log(response.data);
+        });
+        if(username.value !== '' && password.value !== '' ){
+            window.location.href = 'http://localhost:3000/dangnhap';
+        }
+        
+    }
+
     const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
+        setState({ ...state, [event.target.name]: event.target.checked });
     };
     const background = {
     backgroundImage: 'url("/images/backgroundrs.png")'
@@ -27,7 +63,7 @@ export default function registration() {
 
     return (
         <div className='wrap-registration' style={background}>
-            <form>
+            <form onSubmit={handleSubmit} >
                 <Link to='/login'><img src='/images/logo.png' alt='' /></Link>
                 <div className='wrap-userdetail'>
                     <div className='hoten'>
@@ -57,7 +93,7 @@ export default function registration() {
                     <input type='email' id='email'/>
 
                     <label>Tên đăng nhập <span className='error'>*</span></label> <br/>
-                    <input type='text' id='namuser'/>
+                    <input type='text' id='nameuser'/>
                     <span className='error'>Tên đăng nhập không được để trống</span>
                     <div className='wrap-pas'>
                         <div>
@@ -99,7 +135,7 @@ export default function registration() {
                     <select className='language'>
                         <option>Tiếng Việt</option>
                     </select>
-                    <i class=" star fas fa-star"></i>
+                    <i className=" star fas fa-star"></i>
                     
             </form>
         </div>

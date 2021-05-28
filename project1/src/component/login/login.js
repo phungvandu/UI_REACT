@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import './login.css';
 
 export default function login() {
+
+
+
     return (
         <div className='wrap-login'>
             <div className='title-left'>
@@ -16,11 +19,11 @@ export default function login() {
                 <div className='logo'>
                     <a href='/dangnhap'><img src='/images/logo.png' alt='' /></a>
                 </div>
-                <form className='form' action=''>
+                <form className='form'>
                     <label>Tên đăng nhập / Email</label>
-                    <input type='text' placeholder='Tên đăng nhập' />
+                    <input type='text' placeholder='Tên đăng nhập' id='username' />
                     <label>Mật Khẩu</label>
-                    <input type='text' placeholder='Mật khẩu' />
+                    <input type='text' placeholder='Mật khẩu' id='password' />
                     <div><a className='forgotpas' href=' '>Quên mật khẩu ?</a></div>
                     <div>
                         <Link to='/dangky'>Đăng ký tài khoản</Link><br/>
